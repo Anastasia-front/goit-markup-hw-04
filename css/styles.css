@@ -1,0 +1,395 @@
+/* -------------------------MAIN SETTINGS---------------------------------- */
+
+:root {
+  --navy-blue: #2e2f42;
+  --white-color: #fff;
+  --cloud-color: #f4f4fd;
+  --blue-color: #4d5ae5;
+  --slate-color: #434455;
+  --cornflower-color: #e7e9fc;
+  --green-color: #31d0aa;
+  --light-slate-color: #8e8f99;
+  --main-font: "Roboto", sans-serif;
+  --second-font: "Raleway", sans-serif;
+  --letter-spacing: 0.02rem;
+  --line-height: 1.5;
+  --semibold-weight: 600;
+}
+body {
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-weight: normal;
+  color: var(--navy-blue);
+  letter-spacing: var(--letter-spacing);
+  line-height: var(--line-height);
+  background-color: var(--white-color);
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  margin: 0;
+}
+img {
+  display: block;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+.title {
+  margin: 0 0 48px 0;
+}
+.subtitle {
+  margin: 0 0 72px 0;
+}
+.crosstitle {
+  margin: 32px 0 8px 0;
+}
+.description {
+  margin: 0 0 32px 0;
+}
+.container {
+  max-width: 1158px;
+  margin: 0 auto;
+}
+.section {
+  padding: 120px 0;
+}
+/* -------------------------SECTIONS---------------------------------- */
+.header {
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.hero {
+  margin: 0 auto;
+  color: var(--cloud-color);
+  max-width: 1600px;
+  height: auto;
+  background-image: linear-gradient(
+      90deg,
+      rgba(46, 47, 66, 0.7) 0%,
+      rgba(46, 47, 66, 0.7) 100%,
+      rgba(46, 47, 66, 0.7) 100%
+    ),
+    url("../images/people-office.png");
+  background-size: cover, cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--navy-blue);
+}
+.team {
+  background-color: var(--cornflower-color);
+  text-align: center;
+}
+.footer {
+  background-color: var(--slate-color);
+}
+/* -------------------------BUTTONS--------------------------------- */
+
+.btn {
+  align-items: center;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  font-weight: var(--semibold-weight);
+  background-color: var(--cloud-color);
+  color: var(--blue-color);
+  border: 1px solid var(--cornflower-color);
+  border-radius: 4px;
+  text-decoration: none;
+}
+.btn:hover,
+.btn:focus {
+  background-color: var(--blue-color);
+  color: var(--cloud-color);
+}
+.button-item:hover,
+.button-item:focus {
+  box-shadow: 0px 1px 10px rgba(46, 47, 66, 0.58);
+}
+.btn.backward {
+  font-weight: var(--semibold-weight);
+  line-height: 1.19;
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: var(--blue-color);
+  border-radius: 4px;
+}
+.btn.backward:hover,
+.btn.backward:focus {
+  background: #404bbf;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+/* -------------------------h1/h2/h3---------------------------------- */
+
+.title {
+  color: var(--white-color);
+  font-weight: var(--semibold-weight);
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+}
+.subtitle {
+  font-weight: var(--semibold-weight);
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+}
+.crosstitle {
+  line-height: 1.2;
+  font-size: 20px;
+  font-weight: var(--semibold-weight);
+}
+/* -------------------------p/link/nav/hover:focus---------------------------------- */
+
+.description,
+.link.description {
+  color: var(--slate-color);
+}
+.link.description {
+  font-weight: normal;
+}
+.link {
+  font-weight: var(--semibold-weight);
+  color: var(--navy-blue);
+  text-decoration: none;
+}
+.link:hover,
+.link:focus {
+  color: var(--blue-color);
+}
+.link.nav {
+  color: var(--navy-blue);
+}
+/* -------------------------FEATURES---------------------------------- */
+
+.feature-svg-bg {
+  background-color: var(--cloud-color);
+  margin-bottom: 8px;
+  width: 264px;
+  height: 112px;
+  position: relative;
+}
+.feature-svg-icon {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+}
+.web {
+  font-family: var(--second-font);
+  font-size: 18px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--blue-color);
+  font-weight: var(--semibold-weight);
+}
+.logo {
+  color: var(--navy-blue);
+}
+.footer {
+  color: var(--cornflower-color);
+}
+.secret-name {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+.description.add {
+  color: var(--cloud-color);
+}
+.description.footer.no-psevdo {
+  color: var(--cloud-color);
+}
+
+.customers-items {
+  margin: 72px auto 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 24px;
+}
+.customers-svg-icon {
+  border: 1px solid var(--light-slate-color);
+  border-radius: 4px;
+}
+/* this is not working, but how it correct I don`t know (even surf in goodle for halh of day)...(( */
+.footer-svg-icons:hover .footer-svg-icon-link:hover .footer-svg-icon:hover {
+  fill: var(--green-color);
+}
+.customers-items:hover .customers-item:hover .customers-svg-icon:hover {
+  fill: var(--blue-color);
+}
+.footer-items:hover .footer-item:hover .footer-svg-icon:hover > svg:hover {
+  fill: var(--blue-color);
+}
+#icon-tag-line:hover,
+#icon-tagline-here:hover {
+  fill: var(--blue-color);
+}
+/* -------------------------CARDS---------------------------------- */
+
+.person {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+  background: var(--white-color);
+}
+/* below margin is so strange therefore teg <a> has a margin-bottom equal to 6.5px */
+.team-svg-icons {
+  margin: 12px auto 29.5px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 24px;
+}
+.card-item {
+  border-bottom: 0.5px solid var(--cloud-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.card-item:hover {
+  box-shadow: 0px 1px 10px rgba(46, 47, 66, 0.58);
+}
+/* -------------------------MARGINS/PADDINGS/WIDTH/HEIGHT---------------------------------- */
+/* -------------------------HEADER---------------------------------- */
+.container-header {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  gap: 77px;
+  padding: 24px 0;
+}
+.container-nav {
+  display: flex;
+  align-items: center;
+  gap: 77px;
+}
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.contacts {
+  display: flex;
+  gap: 40px;
+  margin-left: auto;
+}
+.contacts-icon:hover {
+  fill: var(--light-slate-color);
+}
+.link.description {
+  margin: 0;
+}
+/* -------------------------FOOTER---------------------------------- */
+.footer-container {
+  display: flex;
+  justify-content: start;
+  gap: 120px;
+}
+.footer-wrapper {
+  /* margin-right: auto; */
+  width: 264px;
+  padding: 100px 0;
+}
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  width: 264px;
+  padding: 100px 0;
+}
+.no-psevdo {
+  margin: 16px 0 0 0;
+}
+.footer-svg-icons {
+  display: flex;
+  margin-right: auto;
+  justify-content: center;
+  align-content: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+.footer-title-icons {
+  font-weight: var(--semibold-weight);
+}
+/* -------------------------INDEX.HTML---------------------------------- */
+.container-hero {
+  margin: 0 auto;
+}
+.container-hero > .title {
+  width: 492px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+}
+.btn.backward {
+  width: 170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feature-items,
+.doing-items,
+.team-items {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+.section-features {
+  padding: 120px 0 0 0;
+}
+.feature-item > .crosstitle {
+  margin: 0 0 8px 0;
+}
+.feature-item > .description {
+  margin: 0;
+}
+.team-item > .description {
+  margin-bottom: 0;
+}
+/* -------------------------PORTFOLIO.HTML---------------------------------- */
+.section-portfolio {
+  padding: 96px 0 120px 0;
+}
+.container-card-item {
+  margin: 32px 16px;
+}
+.card-items {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+.card-item {
+  flex-basis: calc((100% - 48px) / 3);
+}
+.description.add {
+  width: 296px;
+  height: 96px;
+  margin: -260px 32px 194px 32px;
+}
+.buttons-items {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 0 0 72px 0;
+}
+.btn {
+  width: auto;
+  padding: 12px 24px;
+}
+.card {
+  padding: 0 0 120px 0;
+}
