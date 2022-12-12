@@ -221,24 +221,7 @@ ul {
   align-content: center;
   gap: 24px;
 }
-.customers-svg-icon {
-  border: 1px solid var(--light-slate-color);
-  border-radius: 4px;
-}
-/* this is not working, but how it correct I don`t know (even surf in goodle for halh of day)...(( */
-.footer-svg-icons:hover .footer-svg-icon-link:hover .footer-svg-icon:hover {
-  fill: var(--green-color);
-}
-.customers-items:hover .customers-item:hover .customers-svg-icon:hover {
-  fill: var(--blue-color);
-}
-.footer-items:hover .footer-item:hover .footer-svg-icon:hover > svg:hover {
-  fill: var(--blue-color);
-}
-#icon-tag-line:hover,
-#icon-tagline-here:hover {
-  fill: var(--blue-color);
-}
+
 /* -------------------------CARDS---------------------------------- */
 
 .person {
@@ -392,4 +375,38 @@ ul {
 }
 .card {
   padding: 0 0 120px 0;
+}
+/* -------------------------SVG---------------------------------- */
+.customers-svg-icon {
+  fill: #8e8f99;
+  border: 1px solid var(--light-slate-color);
+  border-radius: 4px;
+}
+.customers-items:hover .customers-item:hover .customers-svg-icon:hover {
+  fill: var(--blue-color);
+  border: 1px solid var(--blue-color);
+}
+
+/* this is working also correct, but how it do properly I cannot find and I don`t know (even surf in goole for halh of day)...(( */
+.footer-svg-icon-link {
+  align-items: center;
+  display: block;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.1;
+  width: 40px;
+  height: 40px;
+  z-index: 0;
+}
+.footer-svg-icon-link.footer-svg-icon {
+  opacity: 1;
+  z-index: 1;
+  margin: 10px;
+}
+.footer-svg-icon-link:hover {
+  background-color: var(--green-color);
+  opacity: 1;
+}
+.footer-svg-icons:hover .footer-svg-icon-link:hover .footer-svg-icon:hover {
+  fill: var(--green-color);
 }
