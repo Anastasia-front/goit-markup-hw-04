@@ -30,6 +30,7 @@ li {
 a {
   text-decoration: none;
   margin: 0;
+  padding: 0;
 }
 img {
   display: block;
@@ -173,14 +174,10 @@ ul {
 .feature-svg-bg {
   background-color: var(--cloud-color);
   margin-bottom: 8px;
-  width: 264px;
-  height: 112px;
-  position: relative;
-}
-.feature-svg-icon {
-  position: absolute;
-  top: 20%;
-  left: 40%;
+  padding: 24px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .web {
   font-family: var(--second-font);
@@ -212,14 +209,6 @@ ul {
 }
 .description.footer.no-psevdo {
   color: var(--cloud-color);
-}
-
-.customers-items {
-  margin: 72px auto 0;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  gap: 24px;
 }
 
 /* -------------------------CARDS---------------------------------- */
@@ -306,6 +295,7 @@ ul {
 }
 .footer-title-icons {
   font-weight: var(--semibold-weight);
+  font-size: 16px;
 }
 /* -------------------------INDEX.HTML---------------------------------- */
 .container-hero {
@@ -341,6 +331,13 @@ ul {
 }
 .team-item > .description {
   margin-bottom: 0;
+}
+.customers-items {
+  margin: 72px auto 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 24px;
 }
 /* -------------------------PORTFOLIO.HTML---------------------------------- */
 .section-portfolio {
@@ -379,34 +376,37 @@ ul {
 /* -------------------------SVG---------------------------------- */
 .customers-svg-icon {
   fill: #8e8f99;
+}
+.customers-svg-link {
   border: 1px solid var(--light-slate-color);
   border-radius: 4px;
+  padding: 31px -3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.customers-items:hover .customers-item:hover .customers-svg-icon:hover {
+.customers-svg-icon:hover {
   fill: var(--blue-color);
+}
+.customers-svg-link:hover {
   border: 1px solid var(--blue-color);
 }
-
 /* this is working also correct, but how it do properly I cannot find and I don`t know (even surf in goole for halh of day)...(( */
 .footer-svg-icon-link {
   align-items: center;
-  display: block;
+  justify-content: center;
+  display: flex;
   border-radius: 50%;
   background-color: #fff;
   opacity: 0.1;
-  width: 40px;
-  height: 40px;
-  z-index: 0;
-}
-.footer-svg-icon-link.footer-svg-icon {
-  opacity: 1;
+  padding: 8px;
   z-index: 1;
-  margin: 10px;
+}
+.footer-svg-icon {
+  fill: var(--cloud-color);
+  visibility: visible;
 }
 .footer-svg-icon-link:hover {
   background-color: var(--green-color);
   opacity: 1;
-}
-.footer-svg-icons:hover .footer-svg-icon-link:hover .footer-svg-icon:hover {
-  fill: var(--green-color);
 }
