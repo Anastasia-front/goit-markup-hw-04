@@ -401,7 +401,6 @@ ul {
 .customers-svg-link:hover {
   border: 1px solid var(--blue-color);
 }
-/* this is working also correct, but how it do properly I cannot find and I don`t know (even surf in goole for halh of day)...(( */
 .footer-svg-icon-link {
   align-items: center;
   justify-content: center;
