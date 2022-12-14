@@ -9,6 +9,7 @@
   --cornflower-color: #e7e9fc;
   --green-color: #31d0aa;
   --light-slate-color: #8e8f99;
+  --bg-footer-icons: rgba(255, 255, 255, 0.1);
   --main-font: "Roboto", sans-serif;
   --second-font: "Raleway", sans-serif;
   --letter-spacing: 0.02rem;
@@ -374,13 +375,22 @@ ul {
   padding: 0 0 120px 0;
 }
 /* -------------------------SVG---------------------------------- */
+.team-svg-icon-link {
+  background-color: var(--blue-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
 .customers-svg-icon {
   fill: #8e8f99;
 }
 .customers-svg-link {
   border: 1px solid var(--light-slate-color);
   border-radius: 4px;
-  padding: 31px -3px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -397,14 +407,12 @@ ul {
   justify-content: center;
   display: flex;
   border-radius: 50%;
-  background-color: #fff;
-  opacity: 0.1;
+  background-color: var(--bg-footer-icons);
   padding: 8px;
-  z-index: 1;
 }
 .footer-svg-icon {
   fill: var(--cloud-color);
-  visibility: visible;
+  stroke-opacity: 1;
 }
 .footer-svg-icon-link:hover {
   background-color: var(--green-color);
